@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
 .App {
   width: 80%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 875px) {
+  .App {
+    width: 100%;
+    margin: 0;
+  }
 }
