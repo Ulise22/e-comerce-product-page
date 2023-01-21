@@ -5,7 +5,6 @@ import iconDelete from './../Images/icon-delete.svg';
 const CartModal = ({visibleCart, handleCart}: any) => {
     if(!visibleCart) return null;
 
-
     return(
         <div className='cartModal'>
             <div onClick={(e) => {
