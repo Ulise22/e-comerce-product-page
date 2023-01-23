@@ -19,6 +19,7 @@
 .pc__bigImage img {
     width: 100%;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .pc__littleImages {
