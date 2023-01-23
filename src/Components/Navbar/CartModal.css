@@ -23,6 +23,12 @@
     height: 100%;
 }
 
+.cartModal__product__subTitle {
+    color: hsl(219, 9%, 45%);
+    text-align: center;
+    padding: 20px 0;
+}
+
 .cartModal__product {
     display: flex;
     align-items: top;

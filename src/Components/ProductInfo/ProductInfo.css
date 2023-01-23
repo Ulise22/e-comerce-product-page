@@ -75,6 +75,11 @@
     fill: #ffac65
 }
 
+.plusMinusBtn {
+    background-color: #00000000;
+    border: none;
+}
+
 .productInfo__cart__btn {
     width: 100%;
     border-radius: 10px;
@@ -98,5 +103,31 @@
 @media screen and (max-width: 875px) {
     .productInfo {
         width: 100%;
+    }
+
+    .productInfo__container {
+        padding: 20px;
+    }
+
+    .productInfo__title{
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .productInfo__price__container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .productInfo__cart {
+        flex-direction: column;
+    }
+
+    .productInfo__cart__container {
+        justify-content: space-between;
+    }
+
+    .productInfo__cart__btn {
+        padding: 20px 0;
     }
 }

@@ -6,7 +6,7 @@ import avatar from './../Images/image-avatar.png';
 import './Navbar.css';
 import CartModal from "./CartModal";
 
-const Navbar = () => {
+const Navbar = ({sneakersInCart, deleteItemsCart}:any) => {
     const [menu, setMenu] = useState(false);
     const [visibleCart, setVisibleCart] = useState(false);
 
@@ -44,7 +44,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <CartModal visibleCart={visibleCart} handleCart={handleCart} />
+                <CartModal sneakersInCart={sneakersInCart} deleteItemsCart={deleteItemsCart} visibleCart={visibleCart} handleCart={handleCart} />
             </div>
         </nav>
     )
