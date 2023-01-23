@@ -1,4 +1,3 @@
-import cart from './../Images/icon-cart.svg';
 import './ProductInfo.css';
 
 const ProductInfo = () => {
