@@ -1,12 +1,30 @@
 import {useState} from 'react';
-import {ProductImages} from './ProductImages'
+import {ProductImages} from './ProductImages';
+import { ArrayOfImages } from './ArrayOfImages';
 
 import './ImagesSection.css';
 import ProductModal from './ProductModal';
 
 const ImagesSection = () => {
     const [actualImage, setActualImage] = useState(ProductImages.firstImage);
+    const [mobileImage, setMobileImage] = useState(0)
     const [openModal, setOpenModal] = useState(false);
+
+    const nextBc = () => {
+        if(mobileImage !== 3) {
+            setMobileImage(mobileImage+1)
+        } else {
+            setMobileImage(0);
+        }
+    }
+
+    const previousBc = () => {
+        if(mobileImage !== 0) {
+            setMobileImage(mobileImage-1)
+        } else {
+            setMobileImage(3)
+        }
+    }
 
     return(
         <section className='productImages'>
@@ -40,7 +58,17 @@ const ImagesSection = () => {
             </section>
 
             <section className='productImages__mobile'>
-            
+                <img className='mobile__bc' src={ArrayOfImages[mobileImage]} alt="sneakers" />
+
+                <div className='mobileArrows__container'>
+                    <div onClick={nextBc} className='mobileArrows leftArrow'>
+                        <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                    </div>
+
+                    <div onClick={previousBc} className='mobileArrows rightArrow'>
+                        <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                    </div>
+                </div>
             </section>
         </section>
     )

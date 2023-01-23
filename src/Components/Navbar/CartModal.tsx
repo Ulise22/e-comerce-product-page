@@ -44,7 +44,7 @@ const CartModal = ({sneakersInCart, deleteItemsCart,visibleCart, handleCart}: an
                         <img className='cartModal__product__img' src={thumbnail} alt="shoes" />
                         <div className='cartModal__product__desc'>
                             <p>Fall Limited Edition Sneakers</p>
-                            <p className='cartModal__prices'>$125.00 x {sneakersInCart} <b>{sneakersInCart * 125}</b></p>
+                            <p className='cartModal__prices'>$125.00 x {sneakersInCart} <b>${sneakersInCart * 125}</b></p>
                         </div>
                         <button onClick={deleteItemsCart} className='cartModal__product__btn'><img src={iconDelete} alt="delete" /></button>
                     </div>

@@ -67,5 +67,43 @@
 @media screen and (max-width: 875px) {
     .productImages {
         width: 100%;
+        position: relative;
+    }
+
+    .productImages__pc {
+        display: none;
+    }
+
+    .productImages__mobile {
+        display: block;
+    }
+
+    .mobile__bc {
+        width: 100%;
+    }
+
+    .mobileArrows__container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+    }
+
+    .mobileArrows {
+        height: 45px;
+        width: 45px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .mobileArrows:hover svg path {
+        stroke: hsl(26, 100%, 55%);
     }
 } 

@@ -61,12 +61,32 @@
     gap: 30px;
 }
 
+.noAlert {
+    display: none;
+}
+
 .cart {
     cursor: pointer;
 }
 
 .cart:hover path {
     fill: #000;
+}
+
+.navbar__user__cart {
+    position: relative;
+}
+
+.sneakersAlert {
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 20px;
+    padding: 0 9px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    font-size: 14px;
+    top: -12px;
+    right: -10px;
 }
 
 .navbar__user__avatar {
@@ -134,6 +154,29 @@
 
     .navbar__info {
         margin-left: 20px;
+    }
+
+    .navbarOverlay {
+        position: absolute;
+        top:0;
+        width: 100%;
+        background-color: #00000099;
+        height: 100%;
+        z-index: 200;
+    }
+
+    .navbar__user {
+        gap: 10px;
+    }
+
+    .navbar__user__avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar__user__avatar__img {
+        width: 35px;
+        height: 35px;
     }
 
 }

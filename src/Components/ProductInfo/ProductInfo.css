@@ -106,7 +106,7 @@
     }
 
     .productInfo__container {
-        padding: 20px;
+        padding: 0 20px;
     }
 
     .productInfo__title{
@@ -116,7 +116,7 @@
 
     .productInfo__price__container {
         display: flex;
-        gap: 20px;
+        gap: 15px;
     }
 
     .productInfo__cart {
@@ -125,6 +125,7 @@
 
     .productInfo__cart__container {
         justify-content: space-between;
+        gap: 0;
     }
 
     .productInfo__cart__btn {
