@@ -113,6 +113,11 @@
     .navbar {
         border-bottom: none;
         height: 60px;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        background-color: #fff;
+        width: 100%;
     }
 
     .navbar__menu {
@@ -167,6 +172,7 @@
 
     .navbar__user {
         gap: 10px;
+        margin-right: 30px;
     }
 
     .navbar__user__avatar {
